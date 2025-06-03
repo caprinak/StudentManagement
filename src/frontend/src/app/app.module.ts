@@ -11,12 +11,14 @@ import { FacultyService } from './service/faculty.service';
 import { CourseService } from './service/course.service';
 import { ResultService } from './service/result.service';
 import { LibraryCardService } from './service/library-card.service';
+import { SearchComponent } from './shared/search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponent,
+    SearchComponent,
 
   ],
   imports: [

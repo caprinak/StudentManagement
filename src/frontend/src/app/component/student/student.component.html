@@ -1,8 +1,9 @@
 <div class="container" id="main-container">
   <form class="forn-search">
     <!-- use (ngModelChange) to listen everytime input change something in search -->
-    <input class="form-search" type="search" (ngModelChange)="searchStudent(input.value)" #input="ngModel" ngModel
-      name="input" placeholder="Search..." aria-label="Search">
+    <!-- <input class="form-search" type="search" (ngModelChange)="searchStudent(input.value)" #input="ngModel" ngModel
+      name="input" placeholder="Search..." aria-label="Search"> -->
+    <app-search (searchInputEvent)="searchStudent($event)"></app-search>
     <!-- When user click on Add new button will open Add modal -->
     <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
       data-bs-target="#addStudentModal">Add</button>
