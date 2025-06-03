@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-router">
+  <div class="container-fluid">
+    <!-- Main App Brand/Logo (Left) -->
+    <div class="row">
+      <div class="col-md-3">
+        <a class="navbar-brand d-flex align-items-center" routerLink="/">
+          <img src="assets/images/app-logo-sm.png" alt="App Logo" style="height: 28px; margin-right: 8px;">
+          <span>EduSys</span>
+        </a>
+
+      </div>
+      <div class="col-md-7">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/student' routerLinkActive="active">Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/cohort' routerLinkActive="active">Cohort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/faculty' routerLinkActive="active">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/course' routerLinkActive="active">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/result' routerLinkActive="active">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/menu/library-card' routerLinkActive="active">Library Card</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</nav>
+<!-- Added a wrapper for router-outlet content for better spacing -->
+<div class="container mt-4 content-area-background">
+  <router-outlet></router-outlet>
+</div>
