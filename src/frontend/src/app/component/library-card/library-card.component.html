@@ -1,7 +1,6 @@
 <div class="container" id="main-container">
   <form class="forn-search">
-    <input class="form-search" type="search" (ngModelChange)="searchLiraryCard(input.value)" #input="ngModel"
-     ngModel name ="input" placeholder="Search..." aria-label="Search">
+      <app-search (searchInputEvent)="searchLiraryCard($event)"></app-search>
     <button type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#addStudentModal">Add</button>
   </form>
       <table class="table table-bordered">
