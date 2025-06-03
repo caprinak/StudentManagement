@@ -19,9 +19,10 @@ data/
 *.iml
 *.ipr
 ### Frontend ###
+node/
 node_modules/
 package-lock.json
-src/frontend/node/
+/src/frontend/node/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
